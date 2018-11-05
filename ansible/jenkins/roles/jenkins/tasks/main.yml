@@ -25,12 +25,12 @@
     state: present
 
 - name: start jenkins
-  systemd:
+  service:
     name: jenkins
     state: started
 
 - name: enable jenkins
-  systemd:
+  service:
     name: jenkins
     enabled: true
 
